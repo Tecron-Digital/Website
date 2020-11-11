@@ -1,0 +1,314 @@
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;
+
+}
+.sidebar{
+position: fixed;
+width:10%;
+background:#141414;
+height:800px;
+color:white;
+float:left;
+padding:30px;
+}
+.sidebar ul{
+
+list-style: none;
+width:100%;
+
+}
+
+.sidebar ul li{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: center;
+    transition:0.4s;
+
+}
+.sidebar ul li a{
+
+color:white;
+width:100%;
+text-decoration: none;
+}
+
+.sidebar ul li:hover{
+background-color:rgb(255,255,255,0.4);
+}
+.sidebar img{
+width:100px;
+height:100px;
+
+
+
+}
+section{
+
+margin-left:14%;
+}
+.postview{
+padding:20px;
+width:100%;
+background-color:#0042b3;
+
+border:2px solid white;
+color:white;
+}
+.postview div{
+display:inline-block;
+padding:20px;
+width:20%;
+border-right:2px solid #141414;
+
+}
+
+
+
+.special{
+background-color:#141414;
+color:white;
+
+}
+section.create{
+
+align-content: center;
+}
+section h2{
+text-transform: uppercase;
+text-align:center;
+
+
+}
+section h1{
+padding:40px;
+text-align:center;
+color:#0042b3;
+
+}
+
+section.create input{
+margin-left:2%;
+width:70%;
+border:none;
+height:50px;
+background-color:rgb(0,0,0,0.2);
+margin-bottom:20px;
+margin-top:40px;
+font-family:sans-serif;
+font-size:20px;
+}
+
+
+
+section.create textarea{
+margin-left:2%;
+width:70%;
+width:90%;
+background-color: rgb(0,0,0,0.2);
+border:none;
+height:400px;
+
+}
+
+section.create button{
+padding:15px 25px 15px 25px;
+border:none;
+background-color:gold;
+color:black;
+border-radius:5px;
+border:2px solid transparent;
+text-transform: capitalize;
+margin:30px;
+transition: 0.5s;
+}
+#warning{
+font-size:15px;
+text-align:center;
+color:red;
+font-style:italic;
+}
+
+section.create button:hover{
+cursor:pointer;
+border:2px solid black;
+background-color:#141414;
+color:white;
+}
+
+section.changepassword{
+
+
+
+}
+section.changepassword form input{
+width:20%;
+border:none;
+background-color:rgb(0,0,0,0.2);
+height:35px;
+color:black;
+
+}
+
+section.adminssheet{
+width:100%;
+
+
+}
+section.adminssheet .admindetails{
+display:flex;
+
+padding:20px;
+width:50%;
+}
+section.adminssheet .admindetails div{
+padding:20px;
+}
+.admindetails button{
+border:none;
+background-color: #141414;
+color:white;
+padding:10px;
+
+}
+
+.admindetails button.clickable{
+right:0;
+
+
+}
+.admindetails button.clickable:hover{
+cursor:pointer;
+
+
+}    
+
+
+.addadmin button{
+padding:20px;
+border:none;
+color:white;
+background:#0042b3;
+
+}
+.addadmin input{
+margin:10px;
+padding:10px;
+
+
+}
+.addadmin form{
+
+margin-left:20%;
+}
+
+.admindetails .unclickable{
+opacity: 0.4;
+
+}
+.admindetails .unclickable:hover{
+cursor:not-allowed;
+
+}
+
+
+/*-----------------modal box---------------------------*/
+
+
+#modal-box{
+position: fixed;
+box-shadow:0px 0px 1000px 10px;
+background-color:white;
+border-radius:10px;
+width:90%;
+height:80%;
+z-index:400;
+right:3%;
+
+display: none;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+#modal-box div.imageBar{
+max-height:200px;
+max-width:150px;
+transition: 0.8s;
+border:2px solid gold;
+display:inline-block
+}
+
+#modal-box img{
+height:100%;
+width: 100%;
+}
+#modal-box h2{
+margin:0;
+margin-bottom:30px;
+}
+
+#modal-box div.imageBar:hover img{
+border:2px solid #0042b3;
+cursor:pointer;
+opacity:0.5;
+
+}
+div.imageBar button{
+display:none;
+position: absolute;
+
+background-color: rgb(255,255,255,0.4);
+border:none;
+color:black;
+padding:10px;
+border:2px solid #0042b3;
+top:50px;
+left:40px;
+z-index:50;
+
+}
+
+div.imageBar:hover button{
+display:block;
+
+}
+#imgopen{
+position:absolute;
+right:40px;
+top:40px;
+border:2px solid black;
+padding:20px;
+
+margin:10px;
+
+
+}
+
+#addimgform{
+width:90%;
+position:fixed;
+border:2px solid #141414;
+background-color: #141414;
+top:69%;
+
+
+}
+#addimgform input{
+background-color: #141414;
+color:white;
+width:max-content
+
+}
+#addimgform button:hover{
+border-color:white;
+}
+#return{
+color:red;
+font-size:10px;
+font-style:italic;
+
+}
+
+
+/*------------Site Content Section------------------*/
+
