@@ -1,0 +1,3 @@
+options +followSymlinks
+RewriteEngine on
+RewriteRule ^/home$ /index.php
